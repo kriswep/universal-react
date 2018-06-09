@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { View } from 'react-primitives';
 
-export default () => (<div>Test!</div>);
+export default () => (<View>Test!</View>);

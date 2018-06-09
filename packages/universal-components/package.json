@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-primitives": "^0.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
@@ -23,7 +24,12 @@
     "@babel/preset-react": "^7.0.0-beta.49"
   },
   "babel": {
-    "presets": ["@babel/preset-react", "@babel/preset-env"],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }
