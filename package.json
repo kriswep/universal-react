@@ -1,0 +1,10 @@
+{
+  "name": "savior-re-search",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "scripts": {
+    "lerna": "lerna"
+  }
+}
