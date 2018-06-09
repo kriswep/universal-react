@@ -1,0 +1,29 @@
+{
+  "name": "srs-universal-components",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Universally reuseable components for savior-re-search",
+  "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49"
+  },
+  "babel": {
+    "presets": ["@babel/preset-react", "@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  }
+}
