@@ -1,16 +1,15 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _Input = require('./components/Input');
-
-Object.defineProperty(exports, 'Input', {
+Object.defineProperty(exports, "Input", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_Input).default;
+    return _Input.default;
   }
 });
+
+var _Input = _interopRequireDefault(require("./components/Input"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
