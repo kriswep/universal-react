@@ -15,4 +15,5 @@ To install all packages deps and run their prepublish (builds universal comp):
 ## run script in all packages
  - `npm run lerna -- run start` or `yarn lerna run start`
 
- read: https://medium.com/viewsdx/how-to-use-yarn-workspaces-with-create-react-app-and-create-react-native-app-expo-to-share-common-ea27bc4bad62
+## Credits
+Inspired by [universal-components-example](https://github.com/samanthabretous/universal-components-example), see the [ReactEurope talk](https://www.youtube.com/watch?v=D1NkyO-J6B0)
