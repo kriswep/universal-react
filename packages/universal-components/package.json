@@ -1,10 +1,13 @@
 {
   "name": "srs-universal-components",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "Universally reuseable components for savior-re-search",
   "main": "dist/index.js",
   "browser": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
