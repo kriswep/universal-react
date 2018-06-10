@@ -10,6 +10,7 @@
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "maintest": "crna-entry.js",
   "scripts": {
+		"prestart": "rm -rf ./universal-components && cp -r ../universal-components/dist ./universal-components",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
@@ -23,6 +24,6 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
-    "srs-universal-components": "^1.0.0"
+    "react-primitives": "^0.5.1"
   }
 }

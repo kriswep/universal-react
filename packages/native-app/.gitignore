@@ -5,6 +5,7 @@
 
 # dependencies
 /node_modules
+/universal-components
 
 # misc
 .env.local

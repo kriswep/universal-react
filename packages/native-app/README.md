@@ -1,3 +1,11 @@
+## SetUp
+
+Universal components can not be installed via package.json in `CRNA`. :(
+So copy manually for now:
+`cp -r ../universal-components/dist ./universal-components`, thats done via prestart task
+Make sure, to add needed deps from universal.components to native-app's `package.json` as well
+
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
