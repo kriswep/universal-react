@@ -2,7 +2,9 @@
   "name": "srs-universal-components",
   "private": true,
   "version": "1.0.0",
-  "description": "Universally reuseable components for savior-re-search",
+  "description": "Universally reuseable components boilerplate",
+  "author": "Christoph Benjamin Weber",
+  "license": "MIT",
   "main": "dist/index.js",
   "browser": "dist/index.js",
   "scripts": {

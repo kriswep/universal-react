@@ -1,5 +1,7 @@
 {
-  "name": "savior-re-search",
+  "name": "universal-react-boilerplate",
+  "author": "Christoph Benjamin Weber",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "lerna": "^2.11.0"
