@@ -1,1 +1,1 @@
-export { default as Input } from './components/Header';
+export { default as Header } from './components/Header';

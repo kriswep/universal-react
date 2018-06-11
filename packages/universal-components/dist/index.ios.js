@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Input = undefined;
+exports.Header = undefined;
 
 var _react = require('react');
 
@@ -15,7 +15,7 @@ var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Input = exports.Input = function Input(_ref) {
+var Header = exports.Header = function Header(_ref) {
   var title = _ref.title,
       subtitle = _ref.subtitle,
       style = _ref.style;
