@@ -14,6 +14,7 @@
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "maintest": "crna-entry.js",
   "scripts": {
+    "prepublish": "rimraf ./universal-components && ncp ../universal-components/dist ./universal-components",
     "prestart": "rimraf ./universal-components && ncp ../universal-components/dist ./universal-components",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",

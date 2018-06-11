@@ -4,12 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Input = require('./components/Input');
+var _Header = require('./components/Header');
 
 Object.defineProperty(exports, 'Input', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_Input).default;
+    return _interopRequireDefault(_Header).default;
   }
 });
 
