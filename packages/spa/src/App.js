@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from 'srs-universal-components';
+import { Header, Input } from 'srs-universal-components';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +14,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
           <Header title="test" subtitle="!"/>
+          <Input placeholder="..." />
         </p>
       </div>
     );

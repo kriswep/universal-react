@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 // import { Input } from './dist';
-import { Header } from './universal-components';
+import { Header, Input } from './universal-components';
 // does not work imported :(
 
 export default class App extends React.Component {
@@ -12,6 +12,7 @@ export default class App extends React.Component {
         <Text>Changes you make will automatically reload.</Text>
         <Text>Shake your phone to open the developer menu.</Text>
         <Header title="test" subtitle="!" />
+        <Input placeholder="..." />
       </View>
     );
   }

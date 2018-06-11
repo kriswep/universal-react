@@ -3,7 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Header = undefined;
+exports.Input = exports.Header = undefined;
+
+var _Input = require('./components/Input');
+
+Object.defineProperty(exports, 'Input', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Input).default;
+  }
+});
 
 var _react = require('react');
 
