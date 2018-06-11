@@ -9,7 +9,7 @@
   "browser": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist",
+    "build": "rimraf ./dist && babel src -d dist",
     "prepublish": "yarn build"
   },
   "dependencies": {
@@ -21,7 +21,8 @@
     "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2"
   },
   "babel": {
     "presets": [
