@@ -1,4 +1,6 @@
-# Savior RE-Search
+# Universal React Boilerplate
+
+Render reusable components to web (with Create React App) and to mobile (with Create React Native App).
 
 ## add package
 
