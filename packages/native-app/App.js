@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-// import { Input } from './dist';
 import { Header, Input } from './universal-components';
-// does not work imported :(
 
 export default class App extends React.Component {
   render() {
