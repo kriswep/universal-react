@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { StyleSheet, Text, View } from 'react-primitives';
+import { StyleSheet, Text, View } from 'react-native';
 
 const Header = ({ title, subtitle, style }) => (
   <View style={[styles.container, style]}>

@@ -6,7 +6,9 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.0",
+    "react-art": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-native-web": "^0.8.3",
     "react-scripts": "1.1.4",
     "srs-universal-components": "^1.0.0"
   },

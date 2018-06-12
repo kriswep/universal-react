@@ -12,7 +12,7 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactPrimitives = require('react-primitives');
+var _reactNative = require('react-native');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21,15 +21,15 @@ var Header = function Header(_ref) {
       subtitle = _ref.subtitle,
       style = _ref.style;
   return _react2.default.createElement(
-    _reactPrimitives.View,
+    _reactNative.View,
     { style: [styles.container, style] },
     _react2.default.createElement(
-      _reactPrimitives.Text,
+      _reactNative.Text,
       { style: styles.title },
       title
     ),
     _react2.default.createElement(
-      _reactPrimitives.Text,
+      _reactNative.Text,
       { style: styles.subtitle },
       subtitle
     )
@@ -44,7 +44,7 @@ Header.propTypes = {
 exports.default = Header;
 
 
-var styles = _reactPrimitives.StyleSheet.create({
+var styles = _reactNative.StyleSheet.create({
   container: {
     alignItems: 'stretch',
     backgroundColor: '#ffffff',
