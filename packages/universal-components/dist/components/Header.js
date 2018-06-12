@@ -73,3 +73,4 @@ var styles = _reactNative.StyleSheet.create({
     marginBottom: 16
   }
 });
+//# sourceMappingURL=Header.js.map

@@ -50,3 +50,4 @@ var styles = _reactNative.StyleSheet.create({
 });
 
 exports.default = Input;
+//# sourceMappingURL=Input.js.map

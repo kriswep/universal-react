@@ -30,3 +30,4 @@ var Header = exports.Header = function Header(_ref) {
       style = _ref.style;
   return _react2.default.createElement(_Header2.default, { title: title, subtitle: subtitle + ' Native Android', style: style });
 };
+//# sourceMappingURL=index.android.js.map

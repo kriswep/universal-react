@@ -30,3 +30,4 @@ var Header = exports.Header = function Header(_ref) {
       style = _ref.style;
   return _react2.default.createElement(_Header2.default, { title: title, subtitle: subtitle + ' Native iOS', style: style });
 };
+//# sourceMappingURL=index.ios.js.map
