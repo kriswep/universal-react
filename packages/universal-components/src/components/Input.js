@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { StyleSheet, View, TextInput } from 'react-native';
 
-const Input = (props) => (
+const Input = props => (
   <View style={[styles.container, props.style]}>
     <TextInput {...props} style={styles.input} />
   </View>
