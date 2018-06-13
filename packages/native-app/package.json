@@ -7,6 +7,7 @@
   "devDependencies": {
     "jest-expo": "~27.0.0",
     "ncp": "^2.0.0",
+    "prettier": "^1.13.5",
     "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1",
     "rimraf": "^2.6.2"
@@ -29,5 +30,9 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
