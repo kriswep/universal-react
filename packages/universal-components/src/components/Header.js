@@ -18,21 +18,13 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'stretch',
-    backgroundColor: '#ffffff',
+    flex: 1,
+    alignSelf: 'stretch',
+    alignItems: 'center',
     justifyContent: 'space-between',
     maxWidth: '100%',
     overflow: 'hidden',
     padding: 16,
-  },
-  contentContainer: {
-    alignItems: 'stretch',
-    flex: 1,
-    padding: 16,
-  },
-  image: {
-    height: 150,
-    width: 150,
   },
   subtitle: {
     color: '#cccccc',

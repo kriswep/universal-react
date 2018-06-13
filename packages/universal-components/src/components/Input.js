@@ -10,11 +10,11 @@ const Input = props => (
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     alignSelf: 'stretch',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#ffffff',
     maxWidth: '100%',
     overflow: 'hidden',
     padding: 16,
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 4,
     padding: 8,
+    margin: 8,
     fontSize: 16,
   },
 });

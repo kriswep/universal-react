@@ -28,11 +28,11 @@ var Input = function Input(props) {
 
 var styles = _reactNative.StyleSheet.create({
   container: {
+    flex: 1,
     alignSelf: 'stretch',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#ffffff',
     maxWidth: '100%',
     overflow: 'hidden',
     padding: 16
@@ -45,6 +45,7 @@ var styles = _reactNative.StyleSheet.create({
     borderWidth: 2,
     borderRadius: 4,
     padding: 8,
+    margin: 8,
     fontSize: 16
   }
 });
