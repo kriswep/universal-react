@@ -13,9 +13,9 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-          <Header title="test" subtitle="!" />
-          <Input placeholder="..." />
         </p>
+        <Header title="test" subtitle="!" />
+        <Input placeholder="..." />
       </div>
     );
   }
