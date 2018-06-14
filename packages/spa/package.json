@@ -13,16 +13,59 @@
     "srs-universal-components": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.4.0",
     "prettier": "^1.13.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "import/no-extraneous-dependencies": false,
+      "react/prop-types": "warning",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "argsIgnorePattern": "^_",
+          "ignoreRestSiblings": true
+        }
+      ],
+      "react/prefer-stateless-function": false
+    },
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react"
+    ]
   }
 }
