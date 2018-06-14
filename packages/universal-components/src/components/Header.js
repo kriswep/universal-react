@@ -1,20 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { StyleSheet, Text, View } from 'react-native';
-
-const Header = ({ title, subtitle, style }) => (
-  <View style={[styles.container, style]}>
-    <Text style={styles.title}>{title}</Text>
-    <Text style={styles.subtitle}>{subtitle}</Text>
-  </View>
-);
-
-Header.propTypes = {
-  subtitle: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-};
-
-export default Header;
+import { StyleSheet, Text, View } from 'react-native'; // eslint-disable-line
 
 const styles = StyleSheet.create({
   container: {
@@ -37,3 +23,17 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
 });
+
+const Header = ({ title, subtitle, style }) => (
+  <View style={[styles.container, style]}>
+    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.subtitle}>{subtitle}</Text>
+  </View>
+);
+
+Header.propTypes = {
+  subtitle: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+};
+
+export default Header;

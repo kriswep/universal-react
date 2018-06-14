@@ -16,6 +16,30 @@ var _reactNative = require('react-native');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// eslint-disable-line
+
+var styles = _reactNative.StyleSheet.create({
+  container: {
+    flex: 1,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    maxWidth: '100%',
+    overflow: 'hidden',
+    padding: 16
+  },
+  subtitle: {
+    color: '#cccccc',
+    fontSize: 24
+  },
+  title: {
+    color: '#000000',
+    fontSize: 54,
+    fontWeight: 'bold',
+    marginBottom: 16
+  }
+});
+
 var Header = function Header(_ref) {
   var title = _ref.title,
       subtitle = _ref.subtitle,
@@ -42,27 +66,4 @@ Header.propTypes = {
 };
 
 exports.default = Header;
-
-
-var styles = _reactNative.StyleSheet.create({
-  container: {
-    flex: 1,
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    maxWidth: '100%',
-    overflow: 'hidden',
-    padding: 16
-  },
-  subtitle: {
-    color: '#cccccc',
-    fontSize: 24
-  },
-  title: {
-    color: '#000000',
-    fontSize: 54,
-    fontWeight: 'bold',
-    marginBottom: 16
-  }
-});
 //# sourceMappingURL=Header.js.map

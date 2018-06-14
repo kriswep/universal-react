@@ -1,12 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import { StyleSheet, View, TextInput } from 'react-native';
-
-const Input = props => (
-  <View style={[styles.container, props.style]}>
-    <TextInput {...props} style={styles.input} />
-  </View>
-);
+import { StyleSheet, View, TextInput } from 'react-native'; // eslint-disable-line
 
 const styles = StyleSheet.create({
   container: {
@@ -31,5 +24,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+const Input = props => (
+  <View style={[styles.container, props.style]}>
+    <TextInput {...props} style={styles.input} />
+  </View>
+);
 
 export default Input;

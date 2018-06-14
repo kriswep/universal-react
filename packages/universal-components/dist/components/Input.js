@@ -10,21 +10,11 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 var _reactNative = require('react-native');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Input = function Input(props) {
-  return _react2.default.createElement(
-    _reactNative.View,
-    { style: [styles.container, props.style] },
-    _react2.default.createElement(_reactNative.TextInput, _extends({}, props, { style: styles.input }))
-  );
-};
+// eslint-disable-line
 
 var styles = _reactNative.StyleSheet.create({
   container: {
@@ -49,6 +39,14 @@ var styles = _reactNative.StyleSheet.create({
     fontSize: 16
   }
 });
+
+var Input = function Input(props) {
+  return _react2.default.createElement(
+    _reactNative.View,
+    { style: [styles.container, props.style] },
+    _react2.default.createElement(_reactNative.TextInput, _extends({}, props, { style: styles.input }))
+  );
+};
 
 exports.default = Input;
 //# sourceMappingURL=Input.js.map
