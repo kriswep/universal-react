@@ -7,6 +7,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "browser": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d tmp -s true && rimraf ./dist && ncp ./tmp ./dist && rimraf ./tmp",
