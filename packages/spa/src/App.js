@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Input } from 'srs-universal-components';
+import { Header, Input } from './universal-components';
 import logo from './logo.svg';
 import './App.css';
 

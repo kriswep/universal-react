@@ -9,8 +9,7 @@
     "react-art": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-native-web": "^0.8.3",
-    "react-scripts": "1.1.4",
-    "srs-universal-components": "^1.0.0"
+    "react-scripts": "1.1.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -21,9 +20,13 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
-    "prettier": "^1.13.5"
+    "ncp": "^2.0.0",
+    "prettier": "^1.13.5",
+    "rimraf": "^2.6.2"
   },
   "scripts": {
+    "prepublish": "rimraf ./src/universal-components && ncp ../universal-components/dist ./src/universal-components",
+    "prestart": "rimraf ./src/universal-components && ncp ../universal-components/dist ./src/universal-components",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
