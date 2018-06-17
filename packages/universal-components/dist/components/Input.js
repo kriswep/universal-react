@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // eslint-disable-line
 
 var _react = require('react');
 
@@ -12,9 +12,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactNative = require('react-native');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _reactNativeCalendars = require('../deps/react-native-calendars');
 
-// eslint-disable-line
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var styles = _reactNative.StyleSheet.create({
   container: {
@@ -44,7 +44,8 @@ var Input = function Input(props) {
   return _react2.default.createElement(
     _reactNative.View,
     { style: [styles.container, props.style] },
-    _react2.default.createElement(_reactNative.TextInput, _extends({}, props, { style: styles.input }))
+    _react2.default.createElement(_reactNative.TextInput, _extends({}, props, { style: styles.input })),
+    _react2.default.createElement(_reactNativeCalendars.Calendar, null)
   );
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native'; // eslint-disable-line
 
+import { Calendar } from '../deps/react-native-calendars';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -28,6 +30,7 @@ const styles = StyleSheet.create({
 const Input = props => (
   <View style={[styles.container, props.style]}>
     <TextInput {...props} style={styles.input} />
+    <Calendar />
   </View>
 );
 

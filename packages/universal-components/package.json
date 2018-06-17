@@ -10,19 +10,22 @@
   "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist -s true",
+    "build": "babel src -d dist -s true --copy-files",
+    "buildDeps": "babel node_modules/react-native-calendars/src -d src/deps/react-native-calendars -s true --copy-files",
     "cleanBuild": "babel src -d tmp -s true && rimraf ./dist && ncp ./tmp ./dist && rimraf ./tmp",
     "prepublish": "yarn build",
     "lint": "eslint src"
   },
   "dependencies": {
-    "react": "^16.4.0"
+    "react": "^16.4.0",
+    "react-native-calendars": "^1.19.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.9.0",
@@ -56,7 +59,8 @@
       ]
     ],
     "plugins": [
-      "transform-class-properties"
+      "transform-class-properties",
+      "transform-object-rest-spread"
     ]
   },
   "prettier": {

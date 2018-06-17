@@ -8,6 +8,7 @@
     "react": "^16.4.0",
     "react-art": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-native-calendars": "^1.19.3",
     "react-native-web": "^0.8.3",
     "react-scripts": "1.1.4"
   },
