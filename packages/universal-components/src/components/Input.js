@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native'; // eslint-disable-line
+import {
+  FormLabel,
+  FormInput,
+  FormValidationMessage,
+} from 'react-native-elements';
 
-import { Calendar } from '../deps/react-native-calendars';
+// import { Calendar } from '../deps/react-native-calendars';
 
 const styles = StyleSheet.create({
   container: {
@@ -30,7 +35,12 @@ const styles = StyleSheet.create({
 const Input = props => (
   <View style={[styles.container, props.style]}>
     <TextInput {...props} style={styles.input} />
-    <Calendar />
+
+    <FormLabel>Name</FormLabel>
+    <FormInput />
+    <FormValidationMessage>Error message</FormValidationMessage>
+
+    {/* <Calendar /> */}
   </View>
 );
 

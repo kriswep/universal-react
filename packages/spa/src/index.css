@@ -1,3 +1,13 @@
+@font-face {
+  src: url(../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf);
+  font-family: FontAwesome;
+}
+
+@font-face {
+  src: url(../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf);
+  font-family: MaterialIcons;
+}
+
 body {
   margin: 0;
   padding: 0;

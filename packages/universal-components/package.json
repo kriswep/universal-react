@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "react": "^16.4.0",
-    "react-native-calendars": "^1.19.3"
+    "react-native-calendars": "^1.19.3",
+    "react-native-elements": "^0.19.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -28,6 +29,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-native": "^4.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",

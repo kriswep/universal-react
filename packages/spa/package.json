@@ -9,11 +9,16 @@
     "react-art": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-native-calendars": "^1.19.3",
+    "react-native-elements": "^0.19.1",
+    "react-native-vector-icons": "^4.6.0",
     "react-native-web": "^0.8.3",
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
+    "babel-preset-react-native": "^4.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -22,6 +27,9 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
     "ncp": "^2.0.0",
+    "patch-package": "^6.0.0-7",
+    "postinstall-build": "^5.0.1",
+    "postinstall-postinstall": "^1.0.0",
     "prettier": "^1.13.5",
     "rimraf": "^2.6.2"
   },
@@ -30,6 +38,8 @@
     "prestart": "rimraf ./src/universal-components && ncp ../universal-components/dist ./src/universal-components",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postinstall": "patch-package && postinstall-build node_modules/react-native-elements/dist --script build:depRNE",
+    "build:depRNE": "babel node_modules/react-native-elements/src -d node_modules/react-native-elements/dist -s true --copy-files",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint src"

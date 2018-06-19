@@ -6,15 +6,18 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // eslint-disable-line
 
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
 var _reactNative = require('react-native');
 
-var _reactNativeCalendars = require('../deps/react-native-calendars');
+var _reactNativeElements = require('react-native-elements');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import { Calendar } from '../deps/react-native-calendars';
 
 var styles = _reactNative.StyleSheet.create({
   container: {
@@ -45,7 +48,17 @@ var Input = function Input(props) {
     _reactNative.View,
     { style: [styles.container, props.style] },
     _react2.default.createElement(_reactNative.TextInput, _extends({}, props, { style: styles.input })),
-    _react2.default.createElement(_reactNativeCalendars.Calendar, null)
+    _react2.default.createElement(
+      _reactNativeElements.FormLabel,
+      null,
+      'Name'
+    ),
+    _react2.default.createElement(_reactNativeElements.FormInput, null),
+    _react2.default.createElement(
+      _reactNativeElements.FormValidationMessage,
+      null,
+      'Error message'
+    )
   );
 };
 
