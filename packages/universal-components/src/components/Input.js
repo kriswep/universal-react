@@ -6,8 +6,6 @@ import {
   FormValidationMessage,
 } from 'react-native-elements';
 
-// import { Calendar } from '../deps/react-native-calendars';
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -37,7 +35,7 @@ const Input = props => (
     <TextInput {...props} style={styles.input} />
 
     <FormLabel>Name</FormLabel>
-    <FormInput />
+    <FormInput {...props} />
     <FormValidationMessage>Error message</FormValidationMessage>
 
     {/* <Calendar /> */}

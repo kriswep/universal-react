@@ -17,8 +17,6 @@ var _reactNativeElements = require('react-native-elements');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { Calendar } from '../deps/react-native-calendars';
-
 var styles = _reactNative.StyleSheet.create({
   container: {
     flex: 1,
@@ -53,7 +51,7 @@ var Input = function Input(props) {
       null,
       'Name'
     ),
-    _react2.default.createElement(_reactNativeElements.FormInput, null),
+    _react2.default.createElement(_reactNativeElements.FormInput, props),
     _react2.default.createElement(
       _reactNativeElements.FormValidationMessage,
       null,

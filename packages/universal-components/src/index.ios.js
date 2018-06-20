@@ -5,3 +5,4 @@ export const Header = ({ title, subtitle, style }) => (
   <Standard title={title} subtitle={`${subtitle} Native iOS`} style={style} />
 );
 export { default as Input } from './components/Input';
+export { default as Page } from './components/Page';

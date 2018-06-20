@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
-import { Header, Input } from './universal-components';
+import { Page } from './universal-components';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,8 +20,7 @@ export default class App extends React.Component {
     return (
       <SafeAreaView style={styles.container}>
         <ScrollView style={styles.scrollView}>
-          <Header title="test" subtitle="!" />
-          <Input placeholder="1" />
+          <Page title="test" subtitle="!" />
         </ScrollView>
       </SafeAreaView>
     );

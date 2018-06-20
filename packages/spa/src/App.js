@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Header, Input } from './universal-components';
+import { Page } from './universal-components';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header title="test" subtitle="!" />
-        <Input placeholder="1" />
+        <Page title="test" subtitle="!" />
       </div>
     );
   }
