@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-sideswipe/.babelrc b/node_modules/react-native-sideswipe/.babelrc
+new file mode 100644
+index 0000000..a9ce136
+--- /dev/null
++++ b/node_modules/react-native-sideswipe/.babelrc
+@@ -0,0 +1,3 @@
++{
++  "presets": ["react-native"]
++}
+diff --git a/node_modules/react-native-sideswipe/package.json b/node_modules/react-native-sideswipe/package.json
+index 13af2f4..27446f1 100644
+--- a/node_modules/react-native-sideswipe/package.json
++++ b/node_modules/react-native-sideswipe/package.json
+@@ -2,7 +2,7 @@
+   "name": "react-native-sideswipe",
+   "version": "1.4.2",
+   "description": "cross-platform react native carousel with sensible defaults",
+-  "main": "src/index.js",
++  "main": "dist/index.js",
+   "repository": "https://github.com/kkemple/react-native-sideswipe",
+   "author": "Kurtis Kemple <kurtiskemple@gmail.com>",
+   "license": "MIT",
