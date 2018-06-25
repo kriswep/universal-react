@@ -19,7 +19,8 @@
   "dependencies": {
     "react": "^16.4.0",
     "react-native-calendars": "^1.19.3",
-    "react-native-elements": "^0.19.1"
+    "react-native-elements": "^0.19.1",
+    "react-native-sideswipe": "^1.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
