@@ -20,8 +20,13 @@ var _Header = require('../Header');
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _Carousel = require('../Carousel');
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// eslint-disable-line
 var Page = function Page(_ref) {
   var title = _ref.title,
       subtitle = _ref.subtitle,
@@ -30,6 +35,7 @@ var Page = function Page(_ref) {
     _reactNative.View,
     { style: [_styles2.default.container, style] },
     _react2.default.createElement(_Header2.default, { title: title, subtitle: subtitle }),
+    _react2.default.createElement(_Carousel2.default, null),
     _react2.default.createElement(
       _reactNativeElements.Card,
       { title: 'HELLO WORLD', image: require('../../img/mountain.jpg') },
@@ -51,6 +57,7 @@ var Page = function Page(_ref) {
       })
     )
   );
-}; // eslint-disable-line
+};
+
 exports.default = Page;
 //# sourceMappingURL=index.js.map
