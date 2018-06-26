@@ -12,10 +12,6 @@ var _reactNative = require('react-native');
 
 var _reactNativeElements = require('react-native-elements');
 
-var _styles = require('./styles');
-
-var _styles2 = _interopRequireDefault(_styles);
-
 var _Header = require('../Header');
 
 var _Header2 = _interopRequireDefault(_Header);
@@ -23,6 +19,10 @@ var _Header2 = _interopRequireDefault(_Header);
 var _Carousel = require('../Carousel');
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _styles = require('./styles');
+
+var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

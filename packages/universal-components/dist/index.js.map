@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/index.js"],"names":["default"],"mappings":";;;;;;;;;;;2CAASA,O;;;;;;;;;0CACAA,O;;;;;;;;;yCACAA,O","file":"index.js","sourcesContent":["export { default as Header } from './components/Header';\nexport { default as Input } from './components/Input';\nexport { default as Page } from './components/Page';\n"]}
+{"version":3,"sources":["../src/index.js"],"names":["default"],"mappings":";;;;;;;;;;;yCAASA,O","file":"index.js","sourcesContent":["export { default as Page } from './components/Page'; // eslint-disable-line import/prefer-default-export\n"]}

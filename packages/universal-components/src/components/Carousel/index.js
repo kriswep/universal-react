@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import {
-  Animated,
-  Easing,
-  View,
-  Text,
-  StyleSheet,
-  Dimensions,
-} from 'react-native'; // eslint-disable-line
+import { Animated, Easing, View, Text, Dimensions } from 'react-native'; // eslint-disable-line
 
 import SideSwipe from 'react-native-sideswipe';
 import { Card, Badge } from 'react-native-elements';
+
+import styles from './styles';
 
 const { width } = Dimensions.get('window');
 const data = [1, 2, 3, 4, 5];
@@ -46,13 +41,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    // paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
-  },
-});

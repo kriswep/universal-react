@@ -18,6 +18,10 @@ var _reactNativeSideswipe2 = _interopRequireDefault(_reactNativeSideswipe);
 
 var _reactNativeElements = require('react-native-elements');
 
+var _styles = require('./styles');
+
+var _styles2 = _interopRequireDefault(_styles);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -45,7 +49,7 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         _reactNative.View,
-        { style: styles.container },
+        { style: _styles2.default.container },
         _react2.default.createElement(
           _reactNative.Text,
           null,
@@ -86,15 +90,4 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
-
-
-var styles = _reactNative.StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    // paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1'
-  }
-});
 //# sourceMappingURL=index.js.map

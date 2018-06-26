@@ -2,15 +2,17 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native'; // eslint-disable-line
 import { Card, Button } from 'react-native-elements';
 
-import styles from './styles';
 import Header from '../Header';
 import Carousel from '../Carousel';
+import styles from './styles';
 
 const Page = ({ title, subtitle, style }) => (
   <View style={[styles.container, style]}>
     <Header title={title} subtitle={subtitle} />
     <Carousel />
+    {/* eslint-disable global-require */}
     <Card title="HELLO WORLD" image={require('../../img/mountain.jpg')}>
+      {/* eslint-enable */}
       <Text style={{ marginBottom: 10 }}>universal compononents for React</Text>
       <Button
         icon={{ name: 'code' }}
