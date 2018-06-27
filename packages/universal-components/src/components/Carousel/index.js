@@ -1,38 +1,45 @@
 import React, { Component } from 'react';
-import { Animated, Easing, View, Text, Dimensions } from 'react-native'; // eslint-disable-line
+import {
+  Animated,
+  Easing,
+  View,
+  Text,
+  Dimensions,
+  PixelRatio,
+} from 'react-native'; // eslint-disable-line
 
 import SideSwipe from 'react-native-sideswipe';
-import { Card, Badge } from 'react-native-elements';
+import { Card } from 'react-native-elements';
 
+import data from './data';
 import styles from './styles';
 
 const { width } = Dimensions.get('window');
-const data = [1, 2, 3, 4, 5];
+
+const PIXEL_RATIO = PixelRatio.get();
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Center Aligned</Text>
         <SideSwipe
           data={data}
-          style={{ width, maxHeight: 225 }}
+          style={{ width }}
           itemWidth={width}
           threshold={120}
           contentOffset={0}
           renderItem={({ item }) => (
             <View style={{ width, paddingHorizontal: 10 }}>
+              {/* eslint-disable global-require */}
               <Card
-                title="Local Modules"
-                containerStyle={{ maxWidth: width, height: 225 }}
+                title={item.title}
+                image={`https://loremflickr.com/${Math.round(
+                  width * PIXEL_RATIO,
+                )}/${Math.round((width / 2) * PIXEL_RATIO)}/${item.image}`}
+                containerStyle={{ maxWidth: width }}
               >
-                <Badge value={item} />
-                <Text style={{ marginTop: 10 }}>
-                  Science has not yet mastered prophecy. We predict too much for
-                  the next year and yet far too little for the next 10. I don't
-                  know what you could say about a day in which you have seen
-                  four beautiful sunsets.
-                </Text>
+                {/* eslint-enable */}
+                <Text style={{ margin: 10 }}>{item.text}</Text>
               </Card>
             </View>
           )}

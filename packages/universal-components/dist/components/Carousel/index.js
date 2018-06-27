@@ -18,6 +18,10 @@ var _reactNativeSideswipe2 = _interopRequireDefault(_reactNativeSideswipe);
 
 var _reactNativeElements = require('react-native-elements');
 
+var _data = require('./data');
+
+var _data2 = _interopRequireDefault(_data);
+
 var _styles = require('./styles');
 
 var _styles2 = _interopRequireDefault(_styles);
@@ -33,7 +37,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var _Dimensions$get = _reactNative.Dimensions.get('window'),
     width = _Dimensions$get.width;
 
-var data = [1, 2, 3, 4, 5];
+var PIXEL_RATIO = _reactNative.PixelRatio.get();
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -50,14 +54,9 @@ var App = function (_Component) {
       return _react2.default.createElement(
         _reactNative.View,
         { style: _styles2.default.container },
-        _react2.default.createElement(
-          _reactNative.Text,
-          null,
-          'Center Aligned'
-        ),
         _react2.default.createElement(_reactNativeSideswipe2.default, {
-          data: data,
-          style: { width: width, maxHeight: 225 },
+          data: _data2.default,
+          style: { width: width },
           itemWidth: width,
           threshold: 120,
           contentOffset: 0,
@@ -69,14 +68,14 @@ var App = function (_Component) {
               _react2.default.createElement(
                 _reactNativeElements.Card,
                 {
-                  title: 'Local Modules',
-                  containerStyle: { maxWidth: width, height: 225 }
+                  title: item.title,
+                  image: 'https://loremflickr.com/' + Math.round(width * PIXEL_RATIO) + '/' + Math.round(width / 2 * PIXEL_RATIO) + '/' + item.image,
+                  containerStyle: { maxWidth: width }
                 },
-                _react2.default.createElement(_reactNativeElements.Badge, { value: item }),
                 _react2.default.createElement(
                   _reactNative.Text,
-                  { style: { marginTop: 10 } },
-                  'Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next 10. I don\'t know what you could say about a day in which you have seen four beautiful sunsets.'
+                  { style: { margin: 10 } },
+                  item.text
                 )
               )
             );
