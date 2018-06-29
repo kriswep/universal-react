@@ -37,6 +37,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var _Dimensions$get = _reactNative.Dimensions.get('window'),
     width = _Dimensions$get.width;
 
+var styles = (0, _styles2.default)(width);
+
 var PIXEL_RATIO = _reactNative.PixelRatio.get();
 
 var App = function (_Component) {
@@ -53,18 +55,32 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         _reactNative.View,
-        { style: _styles2.default.container },
+        { style: styles.container },
         _react2.default.createElement(_reactNativeSideswipe2.default, {
           data: _data2.default,
           style: { width: width },
-          itemWidth: width,
-          threshold: 120,
-          contentOffset: 0,
+          itemWidth: width - 60,
+          threshold: 80,
+          contentOffset: 12,
           renderItem: function renderItem(_ref) {
-            var item = _ref.item;
+            var _itemIndex = _ref._itemIndex,
+                _currentIndex = _ref._currentIndex,
+                item = _ref.item,
+                animatedValue = _ref.animatedValue;
             return _react2.default.createElement(
-              _reactNative.View,
-              { style: { width: width, paddingHorizontal: 10 } },
+              _reactNative.Animated.View,
+              {
+                style: {
+                  maxWidth: width - 60,
+                  transform: [{
+                    scale: animatedValue.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [0.9, 1],
+                      extrapolate: 'clamp'
+                    })
+                  }]
+                }
+              },
               _react2.default.createElement(
                 _reactNativeElements.Card,
                 {

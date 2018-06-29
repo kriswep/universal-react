@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import {
-  Animated,
-  Easing,
-  View,
-  Text,
-  Dimensions,
-  PixelRatio,
-} from 'react-native'; // eslint-disable-line
+import { Animated, View, Text, Dimensions, PixelRatio } from 'react-native'; // eslint-disable-line
 
 import SideSwipe from 'react-native-sideswipe';
 import { Card } from 'react-native-elements';
 
 import data from './data';
-import styles from './styles';
+import stylesFactory from './styles';
 
 const { width } = Dimensions.get('window');
+const styles = stylesFactory(width);
 
 const PIXEL_RATIO = PixelRatio.get();
 
@@ -25,11 +19,24 @@ export default class App extends Component {
         <SideSwipe
           data={data}
           style={{ width }}
-          itemWidth={width}
-          threshold={120}
-          contentOffset={0}
-          renderItem={({ item }) => (
-            <View style={{ width, paddingHorizontal: 10 }}>
+          itemWidth={width - 60}
+          threshold={80}
+          contentOffset={12}
+          renderItem={({ _itemIndex, _currentIndex, item, animatedValue }) => (
+            <Animated.View
+              style={{
+                maxWidth: width - 60,
+                transform: [
+                  {
+                    scale: animatedValue.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [0.9, 1],
+                      extrapolate: 'clamp',
+                    }),
+                  },
+                ],
+              }}
+            >
               {/* eslint-disable global-require */}
               <Card
                 title={item.title}
@@ -41,7 +48,7 @@ export default class App extends Component {
                 {/* eslint-enable */}
                 <Text style={{ margin: 10 }}>{item.text}</Text>
               </Card>
-            </View>
+            </Animated.View>
           )}
         />
       </View>
