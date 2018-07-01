@@ -40,9 +40,11 @@ export default class App extends Component {
               {/* eslint-disable global-require */}
               <Card
                 title={item.title}
-                image={`https://loremflickr.com/${Math.round(
-                  width * PIXEL_RATIO,
-                )}/${Math.round((width / 2) * PIXEL_RATIO)}/${item.image}`}
+                image={{
+                  uri: `https://loremflickr.com/${Math.round(
+                    width * PIXEL_RATIO,
+                  )}/${Math.round((width / 2) * PIXEL_RATIO)}/${item.image}`,
+                }}
                 containerStyle={{ maxWidth: width }}
               >
                 {/* eslint-enable */}
